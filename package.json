@@ -1,0 +1,16 @@
+{
+  "name": "yogitrack",
+  "version": "1.0.0",
+  "description": "YogiTrack backend for project part 1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
