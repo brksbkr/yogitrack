@@ -127,13 +127,14 @@ app.post('/sales', (req, res) => {
   }
 
   customer.classBalance += selectedPackage.classCount;
-
+  
   const newSale = {
     id: sales.length + 1,
     customerId,
     packageId,
     classCountAdded: selectedPackage.classCount,
-    amount: selectedPackage.price
+    amount: selectedPackage.price,
+    timestamp: new Date().toISOString()
   };
 
   sales.push(newSale);
